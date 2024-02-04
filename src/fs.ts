@@ -3,6 +3,11 @@ import fs from 'node:fs'
 import process from 'node:process'
 import type { RunnerContext } from './runner'
 
+/**
+ * 解析获取项目package.json文件信息
+ * @param ctx
+ * @returns
+ */
 export function getPackageJSON(ctx?: RunnerContext): any {
   const cwd = ctx?.cwd ?? process.cwd()
   const path = resolve(cwd, 'package.json')
