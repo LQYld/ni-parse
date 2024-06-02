@@ -6,9 +6,9 @@
 
 <br>
 
-<pre>
-npm i -g <b>@antfu/ni</b>
-</pre>
+```
+npm i -g @antfu/ni
+```
 
 <a href='https://docs.npmjs.com/cli/v6/commands/npm'>npm</a> · <a href='https://yarnpkg.com'>yarn</a> · <a href='https://pnpm.io/'>pnpm</a> · <a href='https://bun.sh/'>bun</a>
 
@@ -235,6 +235,23 @@ $Env:NI_CONFIG_FILE = 'C:\to\your\config\location'
 ```
 
 <br>
+
+### Integrations
+
+#### asdf
+
+You can also install ni via the [3rd-party asdf-plugin](https://github.com/CanRau/asdf-ni.git) maintained by [CanRau](https://github.com/CanRau)
+
+```bash
+# first add the plugin
+asdf plugin add ni https://github.com/CanRau/asdf-ni.git
+
+# then install the latest version
+asdf install ni latest
+
+# and make it globally available
+asdf global ni latest
+```
 
 ### How?
 
